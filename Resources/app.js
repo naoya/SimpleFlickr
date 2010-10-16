@@ -2,8 +2,9 @@ Titanium.UI.setBackgroundColor('#000');
 var tabGroup = Titanium.UI.createTabGroup();
 
 var meWin = Titanium.UI.createWindow({  
-  // title          :'Your photostream',
-  backgroundColor:'#fff',
+  titleImage     : 'flickr.png',
+  barColor       : '#fff',
+  backgroundColor: '#fff',
   url            :'yours.js'
 });
 
@@ -13,8 +14,10 @@ var meTab = Titanium.UI.createTab({
   window: meWin
 });
 
-var friWin = Titanium.UI.createWindow({  
-  backgroundColor:'#fff',
+var friWin = Titanium.UI.createWindow({
+  titleImage     : 'flickr.png',
+  barColor       : '#fff',
+  backgroundColor: '#fff',
   url            : 'contacts.js'
 });
 

@@ -8,7 +8,7 @@ var Flickr = {
     loader.onload = function() {
       Ti.API.info(this.responseText);
       var data = JSON.parse(this.responseText);
-      win.title = data.title;
+      // win.title = data.title;
       win.add( Flickr.createPhotoView(data) );
     };
     loader.send();
@@ -23,7 +23,7 @@ var Flickr = {
         bottom: 5,
         left  : 5,
         backgroundColor: '#fff'
-          });
+      });
 
       var title = Titanium.UI.createLabel({
         text     : item.title,
